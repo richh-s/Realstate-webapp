@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌐 URL
 
-## Getting Started
+https://harbour-realstate-webapp.vercel.app
 
-First, run the development server:
+📱 Mobile Results
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Performance: 93
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Accessibility: 96
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Best Practices: 100
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+SEO: 100
 
-## Learn More
+Key Metrics
 
-To learn more about Next.js, take a look at the following resources:
+First Contentful Paint (FCP): 1.4s
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Largest Contentful Paint (LCP): 2.9s
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Total Blocking Time (TBT): 80ms
 
-## Deploy on Vercel
+Speed Index: 4.3s
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Cumulative Layout Shift (CLS): 0 (Excellent)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✅ Mobile performance is very good but can be further improved by reducing Speed Index and LCP.
+
+💻 Desktop Results
+
+Performance: 100
+
+Accessibility: 96
+
+Best Practices: 100
+
+SEO: 100
+
+Key Metrics
+
+First Contentful Paint (FCP): 0.2s
+
+Largest Contentful Paint (LCP): 0.6s
+
+Total Blocking Time (TBT): 0ms
+
+Speed Index: 0.9s
+
+Cumulative Layout Shift (CLS): 0 (Perfect)
+
+✅ Desktop performance is outstanding, with near-instant load times and perfect CLS.
+
+📝 Summary
+
+Strengths:
+
+Blazing fast desktop performance (100/100).
+
+Excellent SEO and best practices compliance.
+
+Minimal layout shift ensures stable UI.
+
+High accessibility score (96).
+
+Areas to Improve (mainly mobile):
+
+Optimize Largest Contentful Paint (2.9s) to improve visual readiness.
+
+Reduce Speed Index (4.3s) for smoother perceived load speed.
+
+Consider further mobile-first optimizations like image compression, preloading key assets, or reducing unused JavaScript.
+
+✨ Overall, HomeHarbor ranks as a high-performance, SEO-friendly, and accessible web application.
