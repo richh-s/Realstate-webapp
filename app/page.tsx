@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
+
+
 import SearchBar, { type SearchFilters } from '@/components/layout/SearchBar';
 import ListingCard from '@/components/listings/ListingCard';
 import { listings as DATA } from '@/lib/data/listings';
@@ -57,7 +57,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+ 
       <main id="main-content" className="flex-1">
         {/* Hero */}
         <section className="relative bg-blue-700 dark:bg-blue-900 text-white py-16 md:py-24">
@@ -131,7 +131,7 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-      <Footer />
+  
     </div>
   );
 }

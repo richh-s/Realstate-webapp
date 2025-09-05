@@ -6,7 +6,6 @@ import { getListingBySlug, getListings } from '@/lib/data';
 import { formatPrice, formatDate, formatSquareFeet, getPropertyTypeColor, getBedroomsText, getBathroomsText } from '@/lib/helpers';
 import Gallery from '@/components/listings/Gallery';
 import ContactForm from '@/components/forms/ContactForm';
-import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 export async function generateStaticParams() {
@@ -24,7 +23,6 @@ export default async function ListingDetail({ params }: { params: { slug: string
 
   return (
     <div className="bg-gray-50 dark:bg-gray-900 min-h-screen flex flex-col">
-      <Header />
       <main id="main-content" className="flex-1">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-6xl">
           <nav className="flex mb-6 text-sm" aria-label="Breadcrumb">
