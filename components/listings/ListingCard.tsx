@@ -15,12 +15,12 @@ export default function ListingCard({
   listing: Listing;
   index: number;
 }) {
-  // Runtime safety (prevents the destructure crash even if a bad prop slips through)
-  if (!listing) return null;
-
-  // Framer Motion v11 can return boolean | null; coerce to boolean
+  // Hooks must run unconditionally (before any early returns)
   const reduced = useReducedMotion() ?? false;
   const cardVariants = createCardVariants(reduced);
+
+  // Guard after hooks
+  if (!listing) return null;
 
   const {
     slug,
