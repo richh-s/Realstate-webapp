@@ -355,5 +355,6 @@ export interface Listing {
     },
     listedDate: '2023-07-01',
     propertyType: 'House'
-  }];
+  },
+];
   
