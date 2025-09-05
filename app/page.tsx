@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import SearchBar, { type SearchFilters } from '@/components/SearchBar';
-import ListingCard from '@/components/ListingCard';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import SearchBar, { type SearchFilters } from '@/components/layout/SearchBar';
+import ListingCard from '@/components/listings/ListingCard';
 import { listings as DATA } from '@/lib/data/listings';
 import { createContainerVariants } from '@/lib/motion';
 
@@ -14,7 +14,7 @@ export default function HomePage() {
   const [loading, setLoading] = useState(true);
   const [sort, setSort] = useState('newest');
   const reduced = useReducedMotion();
-  const containerVariants = createContainerVariants(reduced);
+  const containerVariants = createContainerVariants(reduced ?? false);
 
   useEffect(() => {
     const t = setTimeout(() => setLoading(false), 600);

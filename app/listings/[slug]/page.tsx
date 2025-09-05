@@ -4,10 +4,10 @@ import { notFound } from 'next/navigation';
 import { Bed, Bath, Square, Calendar, Tag, Home, Phone, Mail, ArrowLeft, Check } from 'lucide-react';
 import { getListingBySlug, getListings } from '@/lib/data';
 import { formatPrice, formatDate, formatSquareFeet, getPropertyTypeColor, getBedroomsText, getBathroomsText } from '@/lib/helpers';
-import Gallery from '@/components/Gallery';
-import ContactForm from '@/components/ContactForm';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Gallery from '@/components/listings/Gallery';
+import ContactForm from '@/components/forms/ContactForm';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 export async function generateStaticParams() {
   const all = await getListings();
