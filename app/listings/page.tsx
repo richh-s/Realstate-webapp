@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     description:
       'Browse featured real estate listings including houses, condos, and estates.',
     type: 'website',
-    url: 'https://your-domain.com/listings',
+    url: 'https://harbour-realstate-webapp.vercel.app/listings',
   },
-  alternates: { canonical: 'https://your-domain.com/listings' },
+  alternates: { canonical: 'https://harbour-realstate-webapp.vercel.app/listings' },
 };
 
 export default function ListingsPage() {
